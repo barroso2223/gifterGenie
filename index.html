@@ -83,6 +83,21 @@
         </div>
     </section>
 
+    <section class="blog-posts">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            {% for post in blog_posts %}
+                <div class="blog-post">
+                    <h3>{{ post[0] }}</h3>
+                    <p>{{ post[1] }}</p>
+                    <small>Posted on: {{ post[2] }}</small> <!-- Displaying the date -->
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+    </section>
+    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 GifterGenie. All rights reserved.</p>
