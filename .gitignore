@@ -1,0 +1,22 @@
+# Virtual environment folder
+gifterGenie_env/
+
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# SQLite database
+giftergenie.db
+
+# IDE folders
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Node.js or other non-essential files
+node_modules/
+
+# Any other files or directories you want to ignore
