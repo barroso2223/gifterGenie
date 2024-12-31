@@ -9,13 +9,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Gifter Genie</title>
-    <link rel="icon" href="images/magic-lamp.png" type="image/png">
+    <link rel="icon" href="images/Gifter Genie.png" type="image/png">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container">
+            <h1>Welcome to <img src="images/Gifter Genie.png" alt="logo" width="15%" height="15%"> Gifter Genie</h1>
+            <p>Your personalized gift recommendation assistant!</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Looking for the perfect gift?</h2>
+            <p>Get personalized gift ideas based on your preferences, event details, and budget.</p>
+            <button onclick="scrollToForm()">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose GifterGenie?</h2>
+            <div class="feature-item">
+                <h3>Personalized Recommendations</h3>
+                <p>Based on preferences, age, hobbies, and more!</p>
+            </div>
+            <div class="feature-item">
+                <h3>Easy-to-use Interface</h3>
+                <p>Just answer a few simple questions and let us do the rest.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Save Time and Effort</h3>
+                <p>Find the perfect gift in minutes, not hours!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-started-form" id="form-section">
+        <div class="container">
+            <h2>Start Your Gift Search Now</h2>
+            <form id="gift-form">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type" required>
+                    <option value="birthday">Birthday</option>
+                    <option value="holiday">Holiday</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="price-range">Price Range</label>
+                <select id="price-range" name="price-range" required>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-200">$101 - $200</option>
+                    <option value="200+">$200+</option>
+                </select>
+
+                <button type="submit">Find My Gift</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <p>As an Amazon Associate, I earn from qualifying purchases. <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000">Learn more about the Amazon Associates Program</a>.</p>
+            <p>For more information on how we handle your data, please read our <a href="https://www.amazon.com/privacy">Privacy Notice</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GifterGenie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
+
